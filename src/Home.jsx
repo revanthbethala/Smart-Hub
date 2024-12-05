@@ -1,5 +1,5 @@
 import Carousel from "./Carousel";
-import { appleWatch } from "./Data";
+import { appleWatch, gadgets } from "./Data";
 export default function Home() {
   return (
     <>
@@ -26,7 +26,7 @@ export default function Home() {
 
         <div className="flex items-center justify-center w-full md:w-1/2">
           <img
-            src={appleWatch}
+            src={gadgets}
             alt="A selection of gadgets including phones, laptops, and accessories"
             className=" w-full max-w-lg "
           />

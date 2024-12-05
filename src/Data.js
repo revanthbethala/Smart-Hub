@@ -8,6 +8,7 @@ import dellxps from "./assets/dellxps.jpg";
 import samwatch from "./assets/samwatch.jpg";
 import sony from "./assets/sony.webp";
 import jblBuds from "./assets/jblBuds.webp";
+import gadgets from "./assets/gadgets2.png";
 
 export {
   appleWatch,
@@ -20,7 +21,8 @@ export {
   samwatch,
   sony,
   jblBuds,
-  productData,  // Export productData
+  productData,
+  gadgets, // Export productData
 };
 
 const productData = [
@@ -129,7 +131,7 @@ const productData = [
     category: "Headphones",
     price: 29999,
     rating: 4,
-    image:sony, // Add this image if imported
+    image: sony, // Add this image if imported
     description:
       "The Bose QuietComfort 45 delivers world-class noise cancellation, immersive sound, and long battery life, perfect for travel and relaxation.",
   },

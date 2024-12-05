@@ -56,16 +56,13 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              {["facebook-f", "twitter", "instagram", "linkedin-in"].map(
+              {["facebook", "twitter", "instagram", "linked-in"].map(
                 (icon) => (
                   <a
                     key={icon}
-                    href={`https://${icon.split("-")[0]}.com`}
-                    className="text-white hover:text-blue-200 transition-colors duration-300"
-                    aria-label={`Follow us on ${icon.split("-")[0]}`}
+                    className="capitalize text-white hover:text-blue-200 transition-colors duration-300 cursor-pointer"
                   >
-                    <i className={`fab fa-${icon} text-xl`}></i>{" "}
-                    {/* Added text-xl for larger icons */}
+                    {icon}
                   </a>
                 )
               )}
@@ -73,9 +70,8 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Copyright Section */}
         <div className="mt-8 text-center text-gray-200">
-          <p>© 2024 Your Brand Name. All Rights Reserved.</p>
+          <p>© 2024 Smart Hub. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
