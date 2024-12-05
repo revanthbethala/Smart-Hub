@@ -8,5 +8,5 @@ html {
 }
 
 .img-style {
-  @apply w-1/2 h-1/2 object-cover hover:scale-105 transition-all ease-in duration-100;
+  @apply w-[20rem] h-[20rem] object-contain hover:scale-105 transition-all ease-in duration-100 ;
 }

@@ -3,6 +3,25 @@ import applebuds from "./assets/applebuds.jpg";
 import ipad from "./assets/ipad.jpg";
 import mac from "./assets/mac.jpg";
 import S23 from "./assets/S23.jpg";
+import apple15 from "./assets/apple15.jpg";
+import dellxps from "./assets/dellxps.jpg";
+import samwatch from "./assets/samwatch.jpg";
+import sony from "./assets/sony.webp";
+import jblBuds from "./assets/jblBuds.webp";
+
+export {
+  appleWatch,
+  applebuds,
+  ipad,
+  S23,
+  mac,
+  apple15,
+  dellxps,
+  samwatch,
+  sony,
+  jblBuds,
+  productData,  // Export productData
+};
 
 const productData = [
   // Mobiles
@@ -12,7 +31,7 @@ const productData = [
     category: "Mobile",
     price: 65518,
     rating: 4,
-    image: "samsungGalaxyS23.jpg",
+    image: S23, // Use imported image
     description:
       "The Samsung Galaxy S23 features a Dynamic AMOLED display, Snapdragon 8 Gen 2 processor, and a triple-camera setup, delivering smooth performance and stunning photos.",
   },
@@ -22,7 +41,7 @@ const productData = [
     category: "Mobile",
     price: 81918,
     rating: 5,
-    image: "iphone15.jpg",
+    image: apple15, // Use imported image
     description:
       "The iPhone 15 boasts the A17 Bionic chip, Super Retina XDR display, and an advanced camera system, offering exceptional performance and stunning visuals.",
   },
@@ -34,7 +53,7 @@ const productData = [
     category: "Laptop",
     price: 89918,
     rating: 3,
-    image: "dellXPS13.jpg",
+    image: dellxps, // Use imported image
     description:
       "The Dell XPS 13 is a premium ultrabook with Intel Evo processors, a lightweight aluminum body, and a long-lasting battery for professionals on the go.",
   },
@@ -44,7 +63,7 @@ const productData = [
     category: "Laptop",
     price: 98078,
     rating: 4,
-    image: "macBookAirM2.jpg",
+    image: mac, // Use imported image
     description:
       "The MacBook Air M2 offers the powerful M2 chip, Retina display, and up to 18 hours of battery life, combining portability and performance.",
   },
@@ -56,7 +75,7 @@ const productData = [
     category: "Tablet",
     price: 98078,
     rating: 5,
-    image: "ipadPro.jpg",
+    image: ipad, // Use imported image
     description:
       "The iPad Pro with the M2 chip and Liquid Retina XDR display offers laptop-like performance, making it ideal for creativity and productivity.",
   },
@@ -66,7 +85,7 @@ const productData = [
     category: "Tablet",
     price: 73718,
     rating: 2,
-    image: "galaxyTabS9.jpg",
+    image: S23, // Add this image if imported
     description:
       "The Galaxy Tab S9 features an AMOLED display and Snapdragon 8 Gen 2 chip, providing top-tier performance and long-lasting battery life.",
   },
@@ -78,7 +97,7 @@ const productData = [
     category: "Watch",
     price: 32778,
     rating: 4,
-    image: "appleWatchSeries9.jpg",
+    image: appleWatch, // Use imported image
     description:
       "The Apple Watch Series 9 combines health tracking, a clear always-on display, and improved performance, ideal for fitness and daily tasks.",
   },
@@ -88,7 +107,7 @@ const productData = [
     category: "Watch",
     price: 29999,
     rating: 3,
-    image: "galaxyWatch6.jpg",
+    image: samwatch, // Use imported image
     description:
       "The Galaxy Watch 6 offers an AMOLED display, fitness tracking, and integration with Android devices, designed for everyday use.",
   },
@@ -100,7 +119,7 @@ const productData = [
     category: "Headphones",
     price: 29999,
     rating: 5,
-    image: "sonyWH1000XM5.jpg",
+    image: sony, // Use imported image
     description:
       "The Sony WH-1000XM5 offers industry-leading noise cancellation, exceptional audio, and up to 30 hours of battery life for uninterrupted listening.",
   },
@@ -110,7 +129,7 @@ const productData = [
     category: "Headphones",
     price: 29999,
     rating: 4,
-    image: "boseQuietComfort45.jpg",
+    image:sony, // Add this image if imported
     description:
       "The Bose QuietComfort 45 delivers world-class noise cancellation, immersive sound, and long battery life, perfect for travel and relaxation.",
   },
@@ -122,7 +141,7 @@ const productData = [
     category: "Buds",
     price: 24999,
     rating: 5,
-    image: "airpodsPro2.jpg",
+    image: applebuds, // Use imported image
     description:
       "The AirPods Pro (2nd Gen) features active noise cancellation, spatial audio, and a comfortable design with extended battery life.",
   },
@@ -132,10 +151,8 @@ const productData = [
     category: "Buds",
     price: 17999,
     rating: 4,
-    image: "galaxyBuds2Pro.jpg",
+    image: jblBuds, // Use imported image
     description:
       "The Galaxy Buds 2 Pro provide high-quality sound, noise cancellation, and a comfortable fit, ideal for extended listening sessions.",
   },
 ];
-
-export { appleWatch, applebuds,ipad,S23,mac, productData };
