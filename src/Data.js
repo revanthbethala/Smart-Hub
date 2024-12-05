@@ -1,8 +1,8 @@
-import samsungMobile from "./assets/samsungMobile.jpeg";
-import samsungLaptop from "./assets/samsungLaptop.webp";
 import appleWatch from "./assets/appleWatch.webp";
-import jblBuds from "./assets/jblBuds.webp";
-import gadgets from "./assets/gadgets.jpg";
+import applebuds from "./assets/applebuds.jpg";
+import ipad from "./assets/ipad.jpg";
+import mac from "./assets/mac.jpg";
+import S23 from "./assets/S23.jpg";
 
 const productData = [
   // Mobiles
@@ -11,20 +11,20 @@ const productData = [
     name: "Samsung Galaxy S23",
     category: "Mobile",
     price: 65518,
-    rating: 4.5,
+    rating: 4,
     image: "samsungGalaxyS23.jpg",
     description:
-      "The Samsung Galaxy S23 features a stunning Dynamic AMOLED display with a smooth 120Hz refresh rate. Powered by the Snapdragon 8 Gen 2 processor, it delivers seamless performance. Its triple-camera setup captures exceptional photos and videos. The device boasts a sleek design, IP68 water resistance, and a long-lasting 5000mAh battery with fast charging support.",
+      "The Samsung Galaxy S23 features a Dynamic AMOLED display, Snapdragon 8 Gen 2 processor, and a triple-camera setup, delivering smooth performance and stunning photos.",
   },
   {
     id: 2,
     name: "Apple iPhone 15",
     category: "Mobile",
     price: 81918,
-    rating: 4.7,
+    rating: 5,
     image: "iphone15.jpg",
     description:
-      "The Apple iPhone 15 features the powerful A17 Bionic chip for exceptional speed. Its Super Retina XDR display offers vibrant visuals, while the advanced camera system ensures stunning photos. With durable Ceramic Shield protection, iOS 17 software, and MagSafe support, the iPhone 15 is designed to keep up with your lifestyle.",
+      "The iPhone 15 boasts the A17 Bionic chip, Super Retina XDR display, and an advanced camera system, offering exceptional performance and stunning visuals.",
   },
 
   // Laptops
@@ -33,20 +33,20 @@ const productData = [
     name: "Dell XPS 13",
     category: "Laptop",
     price: 89918,
-    rating: 4.8,
+    rating: 3,
     image: "dellXPS13.jpg",
     description:
-      "The Dell XPS 13 is a premium ultrabook with an InfinityEdge display and exceptional performance powered by Intel Evo processors. It offers up to 16GB RAM and 1TB SSD storage for multitasking and productivity. A lightweight aluminum body and a long-lasting battery make it a top choice for professionals on the go.",
+      "The Dell XPS 13 is a premium ultrabook with Intel Evo processors, a lightweight aluminum body, and a long-lasting battery for professionals on the go.",
   },
   {
     id: 4,
     name: "MacBook Air M2",
     category: "Laptop",
     price: 98078,
-    rating: 4.9,
+    rating: 4,
     image: "macBookAirM2.jpg",
     description:
-      "The MacBook Air M2 is powered by Apple’s M2 chip, providing unmatched speed and efficiency. Its Retina display ensures vibrant visuals, while the lightweight and fanless design offers portability and silent operation. With up to 18 hours of battery life, it’s perfect for all-day use.",
+      "The MacBook Air M2 offers the powerful M2 chip, Retina display, and up to 18 hours of battery life, combining portability and performance.",
   },
 
   // Tablets
@@ -55,20 +55,20 @@ const productData = [
     name: "Apple iPad Pro",
     category: "Tablet",
     price: 98078,
-    rating: 4.9,
+    rating: 5,
     image: "ipadPro.jpg",
     description:
-      "The Apple iPad Pro features the M2 chip, delivering laptop-like performance. Its Liquid Retina XDR display offers stunning visuals, while ProMotion technology ensures a responsive touch experience. The device supports the Apple Pencil and Magic Keyboard for creativity and productivity.",
+      "The iPad Pro with the M2 chip and Liquid Retina XDR display offers laptop-like performance, making it ideal for creativity and productivity.",
   },
   {
     id: 6,
     name: "Samsung Galaxy Tab S9",
     category: "Tablet",
     price: 73718,
-    rating: 4.6,
+    rating: 2,
     image: "galaxyTabS9.jpg",
     description:
-      "The Samsung Galaxy Tab S9 offers a premium tablet experience with its AMOLED display and S Pen support. Powered by the Snapdragon 8 Gen 2 chip, it excels in both performance and battery life. Its durable design and Android OS make it a versatile choice for work and play.",
+      "The Galaxy Tab S9 features an AMOLED display and Snapdragon 8 Gen 2 chip, providing top-tier performance and long-lasting battery life.",
   },
 
   // Watches
@@ -77,20 +77,20 @@ const productData = [
     name: "Apple Watch Series 9",
     category: "Watch",
     price: 32778,
-    rating: 4.8,
+    rating: 4,
     image: "appleWatchSeries9.jpg",
     description:
-      "The Apple Watch Series 9 combines style and functionality with advanced health tracking features. Its always-on Retina display ensures clear visibility, while new performance improvements make it faster and more efficient. The watch is perfect for fitness, communication, and daily tasks.",
+      "The Apple Watch Series 9 combines health tracking, a clear always-on display, and improved performance, ideal for fitness and daily tasks.",
   },
   {
     id: 8,
     name: "Samsung Galaxy Watch 6",
     category: "Watch",
     price: 29999,
-    rating: 4.7,
+    rating: 3,
     image: "galaxyWatch6.jpg",
     description:
-      "The Samsung Galaxy Watch 6 is a versatile smartwatch with an AMOLED display and robust health monitoring features. It integrates seamlessly with Android devices, offering notifications, fitness tracking, and advanced sleep monitoring. Its stylish design ensures it suits every occasion.",
+      "The Galaxy Watch 6 offers an AMOLED display, fitness tracking, and integration with Android devices, designed for everyday use.",
   },
 
   // Headphones
@@ -99,20 +99,20 @@ const productData = [
     name: "Sony WH-1000XM5",
     category: "Headphones",
     price: 29999,
-    rating: 4.9,
+    rating: 5,
     image: "sonyWH1000XM5.jpg",
     description:
-      "The Sony WH-1000XM5 offers industry-leading noise cancellation and exceptional audio quality. With up to 30 hours of battery life, it is perfect for long listening sessions. The headphones include touch controls and advanced voice assistant integration for hands-free use.",
+      "The Sony WH-1000XM5 offers industry-leading noise cancellation, exceptional audio, and up to 30 hours of battery life for uninterrupted listening.",
   },
   {
     id: 10,
     name: "Bose QuietComfort 45",
     category: "Headphones",
     price: 29999,
-    rating: 4.8,
+    rating: 4,
     image: "boseQuietComfort45.jpg",
     description:
-      "The Bose QuietComfort 45 headphones deliver world-class noise cancellation and immersive sound quality. With a lightweight design, long battery life, and a comfortable fit, they are perfect for travel, work, and relaxation.",
+      "The Bose QuietComfort 45 delivers world-class noise cancellation, immersive sound, and long battery life, perfect for travel and relaxation.",
   },
 
   // Buds
@@ -121,40 +121,21 @@ const productData = [
     name: "Apple AirPods Pro (2nd Gen)",
     category: "Buds",
     price: 24999,
-    rating: 4.8,
+    rating: 5,
     image: "airpodsPro2.jpg",
     description:
-      "The Apple AirPods Pro (2nd Gen) offers immersive sound with active noise cancellation and spatial audio. The compact design ensures a comfortable fit, while the MagSafe charging case provides extended battery life. They are perfect for seamless connectivity across Apple devices.",
+      "The AirPods Pro (2nd Gen) features active noise cancellation, spatial audio, and a comfortable design with extended battery life.",
   },
   {
     id: 12,
     name: "Samsung Galaxy Buds 2 Pro",
     category: "Buds",
     price: 17999,
-    rating: 4.7,
+    rating: 4,
     image: "galaxyBuds2Pro.jpg",
     description:
-      "The Samsung Galaxy Buds 2 Pro deliver high-fidelity sound with active noise cancellation. Designed for all-day comfort, they feature a lightweight build and IPX7 water resistance. The buds integrate seamlessly with Samsung devices for an enhanced audio experience.",
-  },
-
-  // Buds
-  {
-    id: 13,
-    name: "JBL Tune 230NC",
-    category: "Buds",
-    price: 8999,
-    rating: 4.5,
-    image: "jblTune230NC.jpg",
-    description:
-      "The JBL Tune 230NC TWS earbuds provide rich sound with deep bass and active noise cancellation. With a sleek design and comfortable fit, they are ideal for extended use. The battery life of up to 40 hours ensures you stay connected to your favorite music all day long.",
+      "The Galaxy Buds 2 Pro provide high-quality sound, noise cancellation, and a comfortable fit, ideal for extended listening sessions.",
   },
 ];
 
-export {
-  samsungMobile,
-  samsungLaptop,
-  appleWatch,
-  jblBuds,
-  gadgets,
-  productData,
-};
+export { appleWatch, applebuds,ipad,S23,mac, productData };

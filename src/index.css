@@ -2,3 +2,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.img-style {
+  @apply w-1/2 h-1/2 object-cover hover:scale-105 transition-all ease-in duration-100;
+}
