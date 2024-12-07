@@ -1,6 +1,6 @@
 import Carousel from "./Carousel";
-import { appleWatch, gadgets } from "./Data";
-export default function Home() {
+import { gadgets } from "./Data";
+export default function Home({ setShowProducts }) {
   return (
     <>
       <section className="flex flex-col md:flex-row gap-9 items-center justify-center w-full py-20 min-h-screen px-8">
@@ -16,12 +16,12 @@ export default function Home() {
             and high-quality products, all in one place, ensuring you can shop
             with confidence.
           </p>
-          <a
-            href="#products"
+          <button
             className="bg-blue-500 hover:bg-blue-700 text-white text-base w-fit px-6 py-3 rounded-lg transition duration-300"
+            onClick={() => setShowProducts(true)}
           >
             View Products &rarr;
-          </a>
+          </button>
         </div>
 
         <div className="flex items-center justify-center w-full md:w-1/2">
@@ -32,7 +32,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <Carousel/>
+      <Carousel />
     </>
   );
 }

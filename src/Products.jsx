@@ -2,7 +2,6 @@ import { useState } from "react";
 import { productData } from "./Data";
 
 function Products() {
-  // Track the quantity of each product separately using a state object
   const [quantities, setQuantities] = useState({});
 
   // Filter state variables
@@ -43,71 +42,73 @@ function Products() {
       <h4 className="font-semibold font-Poppins text-center text-3xl">
         Our Products
       </h4>
-      <form
-        className="flex gap-3 p-5 md:items-center md:flex-row flex-col"
-        onSubmit={(e) => e.preventDefault()}
-      >
-        <div className="flex gap-3">
-          <input
-            type="text"
-            onChange={(e) => setSearch(e.target.value)}
-            value={search}
-            className="border-2 border-black px-2 py-2 rounded-lg"
-            placeholder="Search for a product"
-          />
-          <input
-            type="submit"
-            value="Search"
-            className="rounded-lg font-medium bg-blue-500 text-white px-3 py-2 hover:bg-blue-700"
-          />
-        </div>
-      </form>
+      <div className="flex flex-col md:flex-row justify-between ">
+        <form
+          className="flex gap-3 p-5 md:items-center md:flex-row flex-col"
+          onSubmit={(e) => e.preventDefault()}
+        >
+          <div className="flex gap-3">
+            <input
+              type="text"
+              onChange={(e) => setSearch(e.target.value)}
+              value={search}
+              className="border-2 border-black px-2 py-2 rounded-lg"
+              placeholder="Search for a product"
+            />
+            <input
+              type="submit"
+              value="Search"
+              className="rounded-lg font-medium bg-blue-500 text-white px-3 py-2 hover:bg-blue-700"
+            />
+          </div>
+        </form>
 
-      <div className="flex gap-5 p-5 md:flex-row flex-col text-sm">
-        <div className="flex flex-col gap-1">
-          <label htmlFor="priceFilter" className="font-medium font-Inter">
-            Filter by Price
-          </label>
-          <select
-            id="priceFilter"
-            onChange={(e) => {
-              const [min, max] = e.target.value.split("-").map(Number);
-              setMinPrice(min);
-              setMaxPrice(max);
-            }}
-            className="border-2 border-black p-1 rounded-lg"
-          >
-            <option value="0-1000000">All Prices</option>
-            <option value="20000-30000">₹20,000 - ₹30,000</option>
-            <option value="30000-40000">₹30,000 - ₹40,000</option>
-            <option value="40000-50000">₹40,000 - ₹50,000</option>
-            <option value="50000-60000">₹50,000 - ₹60,000</option>
-            <option value="60000-70000">₹60,000 - ₹70,000</option>
-            <option value="70000-1000000">₹70,000+</option>
-          </select>
+        <div className="flex gap-5 p-5 md:flex-row flex-col text-sm">
+          <div className="flex flex-col gap-1">
+            <label htmlFor="priceFilter" className="font-medium font-Inter">
+              Filter by Price
+            </label>
+            <select
+              id="priceFilter"
+              onChange={(e) => {
+                const [min, max] = e.target.value.split("-").map(Number);
+                setMinPrice(min);
+                setMaxPrice(max);
+              }}
+              className="border-2 border-black p-1 rounded-lg"
+            >
+              <option value="0-1000000">All Prices</option>
+              <option value="20000-30000">₹20,000 - ₹30,000</option>
+              <option value="30000-40000">₹30,000 - ₹40,000</option>
+              <option value="40000-50000">₹40,000 - ₹50,000</option>
+              <option value="50000-60000">₹50,000 - ₹60,000</option>
+              <option value="60000-70000">₹60,000 - ₹70,000</option>
+              <option value="70000-1000000">₹70,000+</option>
+            </select>
+          </div>
+
+          {/* Rating Filter */}
+          <div className="flex flex-col text-sm gap-1">
+            <label htmlFor="ratingFilter" className="font-medium font-Inter">
+              Filter by Rating
+            </label>
+            <select
+              id="ratingFilter"
+              onChange={(e) => setMinRating(Number(e.target.value))}
+              value={minRating}
+              className="border-2 border-black p-1 rounded-lg"
+            >
+              <option value="0">All Ratings</option>
+              <option value="1">1 Star & Above</option>
+              <option value="2">2 Stars & Above</option>
+              <option value="3">3 Stars & Above</option>
+              <option value="4">4 Stars & Above</option>
+              <option value="5">5 Stars</option>
+            </select>
+          </div>
         </div>
 
-        {/* Rating Filter */}
-        <div className="flex flex-col text-sm gap-1">
-          <label htmlFor="ratingFilter" className="font-medium font-Inter">
-            Filter by Rating
-          </label>
-          <select
-            id="ratingFilter"
-            onChange={(e) => setMinRating(Number(e.target.value))}
-            value={minRating}
-            className="border-2 border-black p-1 rounded-lg"
-          >
-            <option value="0">All Ratings</option>
-            <option value="1">1 Star & Above</option>
-            <option value="2">2 Stars & Above</option>
-            <option value="3">3 Stars & Above</option>
-            <option value="4">4 Stars & Above</option>
-            <option value="5">5 Stars</option>
-          </select>
-        </div>
       </div>
-
       <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 p-3">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (

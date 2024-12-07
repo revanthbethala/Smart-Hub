@@ -9,7 +9,7 @@ export default function App() {
   return (
     <>
       <Header setShowProducts={setShowProducts} />
-      {showProducts ? <Products /> : <Home />}
+      {showProducts ? <Products /> : <Home setShowProducts={setShowProducts} />}
       <Footer />
     </>
   );
