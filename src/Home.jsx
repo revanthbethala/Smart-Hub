@@ -17,7 +17,7 @@ export default function Home({ setShowProducts }) {
             with confidence.
           </p>
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white text-base w-fit px-6 py-3 rounded-lg transition duration-300"
+            className="bg-blue-700 hover:bg-blue-800 text-white text-center text-sm font-normal w-fit p-3 rounded-lg transition"
             onClick={() => setShowProducts(true)}
           >
             View Products &rarr;

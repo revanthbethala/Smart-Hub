@@ -10,16 +10,15 @@ function Header({ setShowProducts }) {
 
   return (
     <header>
-      <nav className="flex justify-around items-center py-5 px-4 capitalize cursor-pointer bg-blue-300">
-        <h1 className="font-bold uppercase text-2xl font-Parkinsans tracking-wider">
+      <nav className="flex justify-around items-center py-5 px-4 capitalize cursor-pointer bg-blue-600">
+        <h1 className="font-bold uppercase text-2xl  tracking-wider text-gray-200" onClick={() => handlePageChange("home")}>
           Smart Hub
         </h1>
-        <ul className="flex flex-row gap-5 justify-center items-center font-medium text-xl font-Inter">
+        <ul className="flex flex-row gap-5 justify-center items-center font-medium text-lg text-white">
           <li onClick={() => handlePageChange("home")}>
-            <a href="#home">home</a>
+            home
           </li>
           <li onClick={() => handlePageChange("products")}>products</li>
- 
         </ul>
       </nav>
     </header>
